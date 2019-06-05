@@ -1,18 +1,21 @@
-Example of use of passport-jwt 
-===============================
+Example of testing with Mocha + Chai
+=====================================
 
 First of all you must create *.env* file with these variables:
 ```
-MONGO_URI=mongodb+srv://user:password@server/db
+MONGO_URI_PROD="mongodb+srv://user:password@server/database"
+MONGO_URI_DEV="mongodb+srv://user:password@server/database"
+MONGO_URI_TEST="mongodb+srv://user:password@server/database"
 
 # number of rounds for blowfish
 BCRYPT_ROUNDS=12
 
 # server port
 PORT=3000
+PORT_TEST=3001
 
 # enable mocha tests
-NODE_ENV=test
+NODE_ENV=fcctesting
 
 
 ```
